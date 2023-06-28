@@ -1,52 +1,34 @@
-#seat-code-mowers Application
+# Mower code challenge
+Code challenge for SEAT:CODE, in which given the dimensions of a Grid, an object's position, and a set of movements on the grid, the expected output are Cartesian coordinates.
 
-- Current Version: 1.0-SNAPSHOT
+# Requirements
 
-#Main purpose: 
+ - JDK installed
 
-This application is created to navigate the SEAT Mowers through the green grass plateau in order to cut the grass and get a complete view of the surrounding terrain with their on-board cameras to send this information to the SEAT Maintenance Office.
+# Installation
+ - Clone this repository.
+ - Run on your command line on root folder 'mvn clean package -U' to download dependencies and compile the project. This will also execute the unit tests.
 
+# Usage
+ - Once compiled, the executable "mowerchallenge-1.0-SNAPSHOT.jar" will be located under the /target folder.
+ - Run it from the command line using java -jar mowerchallenge-1.0-SNAPSHOT.jar.
+ - Enter the size of the grid {integer} {integer} -> Example: 5 5.
+ - Enter the position and direction of the lawnmower {integer} {integer} {S|N|W|E} -> Example: 3 1 N.
+ - Enter the lawnmower's movements (left 'L', right 'R', move forward 'M') {R|L|M} -> Example: LMLMLMRM.
 
-#How to execute the application?
+# Technical Notes:
+ - This solution has been developed following the following principles:
+	Simplicity
+	Readability of the overall code
+	Encapsulation and decoupling
+	Software architecture
+	Separation of responsibilities
+	Testing
 
-It can be easily executed through the command line in terminal.
+ - Note: I think it's important to consider the efficiency of searching for lawnmowers in the grid for this exercise. If there were a large number of lawnmowers and a considerable-sized grid, the search algorithm could be affected. In this exercise, i used a HashSet<Pair<Integer, Integer>> with a search cost of O(1), or O(n) if there are collisions in the hash table.
 
-Steps to execute:
+# License
+ - OpenSource
 
-- Create the input file following the necessary structure for this application. Can be found an example file in the project root directory with name input.txt
-    - First line should contain a pair or integer numbers with the grid information size for X and Y axis, separate by space. Example: 5 5
-    - Following lines should contain the mower information. First line with the mowers position, and second line with the movements for the mower. 
-        - Example: 
-            - line 1: 1 2 N
-            - line 2: LMLMLMLMM
-
-- To execute the application, open a terminal and go to the root directory. Then execute the following command:
-
-        java -jar target\mower-control-1.0-SNAPSHOTa.jar [INPUT_FILE_PATH]
-  
-  - Where the [INPUT_FILE_PATH] should be the path to the input file with the mowers information. For example: 
-    
-        java -jar target/seat-code-mowers-1.0-SNAPSHOT-shaded.jar input.txt
-
-#How to build the application?
-- This application was build with Maven. 
-- To rebuild the .jar file, it can be done through terminal, pointing to the root directory and executing the command:
-        
-        mvn clean install
-  
-
-#Assumptions:
-
-- If a mower tries to move to a busy coordinate (there is a mower already placed in this coordinate), the movement won't be effectively done and it will be omitted. 
-Nevertheless, the rest of the movements will be evaluated and applied if possible.
-- The input file cannot contain two or more mowers in the same starting position. 
-- Grid size cannot be bigger than 2.147.483.648 (Max. value for Integers in Java language).
-- Assumed the bottom-left coordinates for grid are 0,0. So, coordinates cannot be a negative value.
-- Valid values for movements are: L,R,M. 
-- Valid values for cardinal points are: N,S,E,W. 
-- Exception will be thrown if a mower tries to move out of the grid size.
-- Exception will be thrown if the file is not following the correct structure. 
-
-# Developer:
-
-Vanessa Torres - Email: vanetowers@gmail.com
+# Contact
+ - If you have any questions or inquiries, you can contact me via email at hidalgodeveloper@gmail.com.
