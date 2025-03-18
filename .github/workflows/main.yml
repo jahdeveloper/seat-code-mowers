@@ -41,7 +41,7 @@ jobs:
     - name: Qodana Scan
       uses: JetBrains/qodana-action@main
       env:
-        QODANA_TOKEN: ${{ secrets.QODANA_TOKEN_MVN }}
+        QODANA_TOKEN: ${{ secrets.QODANA_TOKEN_467691673 }}
       with:
         args: "-i,src/,--linter,jetbrains/qodana-jvm:latest"
         pr-mode: false
