@@ -10,7 +10,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -36,7 +35,7 @@ jobs:
       working-directory: src
       
     - name: Archive coverage data
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: maven-coverage-data
         path: .qodana/code-coverage
