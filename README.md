@@ -29,6 +29,6 @@ Code challenge for SEAT:CODE, in which given the dimensions of a Grid, an object
 
 # License
  - OpenSource licence
-
+.
 # Contact
  - If you have any questions or inquiries, you can contact me via email at hidalgodeveloper@gmail.com.
