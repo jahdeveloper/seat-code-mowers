@@ -45,4 +45,4 @@ jobs:
         QODANA_ENDPOINT: 'https://qodana.cloud'
       with:
         args: "-i,src,--linter,jetbrains/qodana-jvm:latest"
-        pr-mode: false
+        pr-mode: true
