@@ -28,7 +28,7 @@ Code challenge for SEAT:CODE, in which given the dimensions of a Grid, an object
  - Note: I think it's important to consider the efficiency of searching for lawnmowers in the grid for this exercise. If there were a large number of lawnmowers and a considerable-sized grid, the search algorithm could be affected. In this exercise, i used a HashSet<Pair<Integer, Integer>> with a search cost of O(1), or O(n) if there are collisions in the hash table.
 
 # License
- - OpenSource licence
+ - OpenSource licence v
 
 # Contact
  - If you have any questions or inquiries, you can contact me via email at hidalgodeveloper@gmail.com.
