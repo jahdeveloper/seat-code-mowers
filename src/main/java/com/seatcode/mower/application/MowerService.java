@@ -10,6 +10,7 @@ import com.seatcode.mower.domain.Mower;
 
 /**
  * Service class to handle actions for the mowers.
+ Created by Jose Hidalgo
  */
 public class MowerService {
 
