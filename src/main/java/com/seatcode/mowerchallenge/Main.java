@@ -4,7 +4,7 @@ import com.seatcode.mowerchallenge.services.impl.ApplicationControllerImpl;
 
 /**
  * @author Jose Hidalgo
- * Main java class
+ * Main Java class
  */
 public class Main {
 
